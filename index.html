@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Gallery Website</title>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="max-width">
+        <div class="logo"><a href="" class="hire">Gallery</a></div>
+        <ul class="menu">
+            <li><a href="" class="hire">Home</a></li>
+            <li><a href="" class="hire">Gallery</a></li>
+            <li><a href="" class="hire">Portfolio</a></li>
+            <li><a href="" class="hire">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<section class="section gallery">
+    <div class="container">
+        <h1>My Gallery</h1>
+        <div class="grid">
+            <img src="1.jpg" height="200" width="300" alt="">
+            <img src="2.jpg" height="200" width="300" alt="">
+            <img src="3.jpg" height="200" width="300" alt="">
+            <img src="4.jpg" height="200" width="300" alt="">
+            <img src="5.jpg" height="200" width="300" alt="">
+            <img src="6.jpg" height="200" width="300" alt="">
+            <img src="7.jpg" height="200" width="300" alt="">
+            <img src="8.jpg" height="200" width="300" alt="">
+            <img src="9.jpg" height="200" width="300" alt="">
+            <img src="10.jpg" height="200" width="300" alt="">
+            <img src="11.jpg" height="200" width="300" alt="">
+            <img src="12.jpg" height="200" width="300" alt="">
+        </div>
+    </div>
+</section>
+
+<script>
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass('active');
+        $('.menu-btn i').toggleClass('active');
+    })
+</script>
+    
+</body>
+</html>

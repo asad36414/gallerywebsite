@@ -1,0 +1,144 @@
+
+body {
+    background: #1d2630;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    padding: 0 48px;
+    margin: auto;
+}
+
+.navbar .logo .hire{
+    font-size: 40px;
+    color: #ddd;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.navbar .menu li .hire{
+    display: block;
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+
+.menu-btn{
+    color: #ddd;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+ img{
+    height: 200px;
+    width: 300px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+ }
+  .section {
+    padding: 16px 20px;
+  }
+  .container {
+    margin: 100px auto;
+    max-width: 560px;
+
+  }
+  .gallery {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 42px;
+    color: #ddd;
+    font-weight: bold;
+    letter-spacing: 1px;  
+    text-transform: uppercase;
+    margin: 50px 0px;
+  }
+ 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(200px, max-content);
+    grid-auto-flow: dense;
+    gap: 15px;
+  }
+
+
+  @media(min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+ 
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 960px;
+    }
+  
+  }
+
+
+@media (max-width: 947px){
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #1d2630;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar .menu li a{
+        margin: 10px 0;
+        font-size: 25px;
+    }
+
+}
